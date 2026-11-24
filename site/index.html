@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elite's Car Spa, Sargodha: car wash, interior cleaning and polish</title>
+  <meta name="description" content="Car wash, interior deep clean, polish and wax in Sargodha. See prices for hatchbacks, sedans and SUVs and book on WhatsApp in one minute.">
+  <meta name="theme-color" content="#10263A">
+  <!-- Preview only: keeps sample details out of Google. Remove at go-live. -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Link previews on WhatsApp, Facebook and Instagram -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Elite's Car Spa, Sargodha">
+  <meta property="og:description" content="Your car, showroom clean. See prices and book on WhatsApp.">
+  <meta property="og:locale" content="en_PK">
+  <meta property="og:locale:alternate" content="ur_PK">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/archivo-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to main content</a>
+
+  <p class="draft-notice" id="draft-notice" hidden data-i18n="draftNotice"></p>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#top" aria-label="Elite's Car Spa, home">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M20 4c6 8 11 14 11 20a11 11 0 0 1-22 0c0-6 5-12 11-20z" fill="currentColor"/>
+          <path d="M14 25a6 6 0 0 0 6 6" fill="none" stroke="#F7FAFB" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">Elite's<span class="brand-sub">Car Spa</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="#prices" data-i18n="navPrices">Prices</a>
+        <a href="#book" data-i18n="navBook">Book</a>
+        <a href="#offers" data-i18n="navOffers">Offers</a>
+        <a href="#visit" data-i18n="navVisit">Visit us</a>
+      </nav>
+      <button class="lang-switch" type="button" id="lang-switch" lang="ur"
+              data-i18n="langSwitch" data-i18n-attr="aria-label:langSwitchLabel">اردو</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="hero-city" data-config="city">Sargodha</p>
+          <h1 class="hero-title" id="hero-title">
+            <span data-i18n="heroTitle">Your car, showroom clean.</span>
+          </h1>
+          <p class="hero-lead" data-i18n="heroLead"></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#book" data-i18n="heroBook">Book on WhatsApp</a>
+            <a class="btn btn-quiet" href="#prices" data-i18n="heroPrices">See prices</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 400 190" class="car">
+            <g class="bubbles">
+              <circle cx="60" cy="150" r="9"/><circle cx="82" cy="160" r="6"/><circle cx="150" cy="156" r="11"/>
+              <circle cx="178" cy="165" r="5"/><circle cx="236" cy="158" r="8"/><circle cx="262" cy="166" r="5"/>
+              <circle cx="350" cy="152" r="10"/><circle cx="372" cy="164" r="6"/><circle cx="120" cy="168" r="4"/>
+            </g>
+            <path class="car-body" d="M20 128 L28 104 Q34 94 50 92 L112 86 L152 56 Q162 50 177 50 L256 50 Q271 50 283 60 L320 88 L362 94 Q380 97 384 110 L386 128 Z"/>
+            <path class="car-glass" d="M162 62 L180 57 L219 57 L219 85 L134 87 Z M227 57 L254 57 Q265 57 273 64 L296 86 L227 85 Z"/>
+            <path class="car-shine" d="M60 104 L300 100" />
+            <circle class="wheel" cx="96" cy="130" r="23"/><circle class="hub" cx="96" cy="130" r="9"/>
+            <circle class="wheel" cx="312" cy="130" r="23"/><circle class="hub" cx="312" cy="130" r="9"/>
+          </svg>
+        </div>
+      </div>
+      <ul class="wrap facts">
+        <li><span class="fact-label" data-i18n="factHours">Open</span><span data-config="hours"></span></li>
+        <li><span class="fact-label" data-i18n="factPickup">Pick-up</span><span data-i18n="factPickupText"></span></li>
+        <li><span class="fact-label" data-i18n="factPay">Pay</span><span data-i18n="factPayText"></span></li>
+      </ul>
+    </section>
+
+    <section class="section prices" id="prices" aria-labelledby="prices-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="prices-title" data-i18n="pricesTitle">Prices</h2>
+          <p data-i18n="pricesLead"></p>
+        </div>
+        <fieldset class="size-picker">
+          <legend data-i18n="carSizeLabel">Car size</legend>
+          <div class="size-options" id="size-options"></div>
+          <p class="size-hint" id="size-hint" aria-live="polite"></p>
+        </fieldset>
+        <ol class="rate-board" id="rate-board"></ol>
+      </div>
+    </section>
+
+    <section class="section book" id="book" aria-labelledby="book-title">
+      <div class="wrap book-grid">
+        <div class="section-head">
+          <h2 id="book-title" data-i18n="bookTitle">Book in one minute</h2>
+          <p data-i18n="bookLead"></p>
+          <p class="call-line"><span data-i18n="orCall">Prefer to talk? Call</span>
+            <a data-config-href="tel" data-config="phone" class="phone-link"></a></p>
+        </div>
+
+        <form class="book-form" id="book-form" novalidate>
+          <div class="field">
+            <label for="f-service" data-i18n="fService">Service</label>
+            <select id="f-service" name="service" required aria-describedby="err-service"></select>
+            <p class="error" id="err-service" hidden data-i18n="errService"></p>
+          </div>
+          <div class="field">
+            <label for="f-size" data-i18n="fCarSize">Car size</label>
+            <select id="f-size" name="size"></select>
+          </div>
+          <div class="field">
+            <label for="f-model"><span data-i18n="fCarModel">Car model</span> <span class="opt" data-i18n="optional">optional</span></label>
+            <input id="f-model" name="model" type="text" autocomplete="off" data-i18n-attr="placeholder:fCarModelHint">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-day"><span data-i18n="fDay">Preferred day</span> <span class="opt" data-i18n="optional">optional</span></label>
+              <input id="f-day" name="day" type="date">
+            </div>
+            <div class="field">
+              <label for="f-time"><span data-i18n="fTime">Preferred time</span> <span class="opt" data-i18n="optional">optional</span></label>
+              <select id="f-time" name="time">
+                <option value=""></option>
+                <option value="tMorning" data-i18n="tMorning">Morning</option>
+                <option value="tAfternoon" data-i18n="tAfternoon">Afternoon</option>
+                <option value="tEvening" data-i18n="tEvening">Evening</option>
+              </select>
+            </div>
+          </div>
+          <div class="field check">
+            <input id="f-pickup" name="pickup" type="checkbox">
+            <label for="f-pickup" data-i18n="fPickup">Collect my car from home or office</label>
+          </div>
+          <div class="field" id="area-field" hidden>
+            <label for="f-area" data-i18n="fArea">Your area</label>
+            <input id="f-area" name="area" type="text" autocomplete="address-level3" aria-describedby="err-area" data-i18n-attr="placeholder:fAreaHint">
+            <p class="error" id="err-area" hidden data-i18n="errArea"></p>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-name"><span data-i18n="fName">Your name</span> <span class="opt" data-i18n="optional">optional</span></label>
+              <input id="f-name" name="name" type="text" autocomplete="given-name">
+            </div>
+            <div class="field">
+              <label for="f-ref"><span data-i18n="fReferral">Referred by a friend?</span> <span class="opt" data-i18n="optional">optional</span></label>
+              <input id="f-ref" name="referral" type="text" autocomplete="off">
+            </div>
+          </div>
+          <div class="estimate" aria-live="polite">
+            <span data-i18n="estimate">Estimated price</span>
+            <strong id="estimate-value">—</strong>
+          </div>
+          <button class="btn btn-primary btn-wide" type="submit" data-i18n="sendWhatsapp">Send on WhatsApp</button>
+          <a class="btn btn-ink btn-wide" id="wa-fallback" hidden target="_blank" rel="noopener" data-i18n="openWhatsapp">Open WhatsApp with your message</a>
+        </form>
+      </div>
+    </section>
+
+    <section class="section offers" id="offers" aria-labelledby="offers-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="offers-title" data-i18n="offersTitle">Offers</h2>
+          <p data-i18n="offersLead"></p>
+        </div>
+        <div class="offer-list" id="offer-list"></div>
+        <div class="refer">
+          <h3 data-i18n="referTitle">Bring a friend</h3>
+          <p data-config="referral"></p>
+          <a class="btn btn-ink" id="share-link" target="_blank" rel="noopener">
+            <span data-i18n="referShare">Share on WhatsApp</span><span class="visually-hidden" data-i18n="newTab"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="gallery-title" data-i18n="galleryTitle">Before and after</h2>
+          <p data-i18n="galleryLead"></p>
+        </div>
+        <!-- Replace each placeholder with <img src="img/..." alt="..."> once photos arrive. -->
+        <div class="pairs">
+          <figure class="pair">
+            <div class="shot shot-before"><span data-i18n="galleryBefore">Before</span><em data-i18n="galleryPlaceholder"></em></div>
+            <div class="shot shot-after"><span data-i18n="galleryAfter">After</span><em data-i18n="galleryPlaceholder"></em></div>
+          </figure>
+          <figure class="pair">
+            <div class="shot shot-before"><span data-i18n="galleryBefore">Before</span><em data-i18n="galleryPlaceholder"></em></div>
+            <div class="shot shot-after"><span data-i18n="galleryAfter">After</span><em data-i18n="galleryPlaceholder"></em></div>
+          </figure>
+        </div>
+        <div class="reviews">
+          <h3 data-i18n="reviewsTitle">Reviews</h3>
+          <p data-i18n="reviewsLead"></p>
+          <a class="btn btn-quiet" data-config-href="reviews" target="_blank" rel="noopener">
+            <span data-i18n="reviewsButton">Open Google reviews</span><span class="visually-hidden" data-i18n="newTab"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" aria-labelledby="faq-title">
+      <div class="wrap narrow">
+        <h2 id="faq-title" data-i18n="faqTitle">Questions</h2>
+        <div id="faq-list"></div>
+      </div>
+    </section>
+
+    <section class="section visit" id="visit" aria-labelledby="visit-title">
+      <div class="wrap">
+        <h2 id="visit-title" data-i18n="visitTitle">Visit us</h2>
+        <dl class="visit-grid">
+          <div><dt data-i18n="visitHours">Timings</dt><dd data-config="hours"></dd></div>
+          <div><dt data-i18n="visitAddress">Address</dt><dd data-config="address"></dd></div>
+          <div><dt data-i18n="visitPhone">Phone and WhatsApp</dt><dd><a data-config-href="tel" data-config="phone" class="phone-link"></a></dd></div>
+          <div><dt data-i18n="visitPickup">Pick-up and drop-off</dt><dd data-config="pickupNote"></dd></div>
+        </dl>
+        <a class="btn btn-ink" data-config-href="maps" target="_blank" rel="noopener">
+          <span data-i18n="visitMap">Open in Google Maps</span><span class="visually-hidden" data-i18n="newTab"></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p class="footer-brand">© <span id="year"></span> Elite's Car Spa, <span data-i18n="footerMade">Sargodha</span></p>
+      <nav aria-label="Social">
+        <span data-i18n="footerFollow">Follow us</span>
+        <a data-config-href="instagram" target="_blank" rel="noopener">Instagram</a>
+        <a data-config-href="facebook" target="_blank" rel="noopener">Facebook</a>
+        <a data-config-href="tiktok" target="_blank" rel="noopener">TikTok</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="sticky-bar" aria-label="Quick contact">
+    <a data-config-href="tel" class="sticky-call" data-i18n="stickyCall">Call</a>
+    <a data-config-href="whatsapp" class="sticky-wa" target="_blank" rel="noopener" data-i18n="stickyWhatsapp">WhatsApp</a>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
